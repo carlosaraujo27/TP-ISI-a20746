@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="spec.xml">
+    <entry key="spec_name" type="xstring" value="default"/>
+    <entry key="number_columns" type="xint" value="3"/>
+    <config key="column_spec_0">
+        <entry key="column_name" type="xstring" value="Conteúdo do Evento"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="possible_values">
+                <entry key="array-size" type="xint" value="26"/>
+                <config key="0">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Reunião de Planeamento%%00010DTSTART:20181215T090000Z%%00010DTEND:20181215T130000Z%%00010DTSTAMP:20241025T220128%%00010UID:evento001%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="1">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Viagem a Madrid%%00010DTSTART:20190625T070000%%00010DTEND:20190625T190000%%00010DTSTAMP:20241025T220128%%00010UID:evento002%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Madrid\, Espanha%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="2">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Consulta Médica%%00010DTSTART:20200310T140000Z%%00010DTEND:20200310T150000Z%%00010DTSTAMP:20241025T220128%%00010UID:evento003%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Lisboa\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="3">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Jantar com Amigos%%00010DTSTART:20210512T180000%%00010DTEND:20210512T210000%%00010DTSTAMP:20241025T220128%%00010UID:evento004%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Porto\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="4">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Viagem a Paris%%00010DTSTART:20210722T000000%%00010DTEND:20210724T000000%%00010DTSTAMP:20241025T220128%%00010UID:evento005%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Paris\, França%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="5">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Apresentação de Projeto%%00010DTSTART:20210901T090000%%00010DTEND:20210901T110000%%00010DTSTAMP:20241025T220128%%00010UID:evento006%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="6">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Aniversário da Maria%%00010DTSTART:20220501T000000%%00010DTEND:20220502T000000%%00010DTSTAMP:20241025T220128%%00010UID:evento007%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="7">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Reunião de Equipa%%00010DTSTART:20220815T083000%%00010DTEND:20220815T093000%%00010DTSTAMP:20241025T220128%%00010UID:evento008%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Lisboa\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="8">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Workshop de Tecnologia%%00010DTSTART:20230605T130000%%00010DTEND:20230605T170000%%00010DTSTAMP:20241025T220128%%00010UID:evento009%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="9">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Churrasco de Verão%%00010DTSTART:20230810T180000%%00010DTEND:20230810T190000%%00010DTSTAMP:20241025T220128%%00010UID:evento010%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Braga\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="10">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Jantar de Negócios%%00010DTSTART:20230915T190000%%00010DTEND:20230915T220000%%00010DTSTAMP:20241025T220128%%00010UID:evento020%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Lisboa\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="11">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Reunião com Cliente%%00010DTSTART:20231002T100000%%00010DTEND:20231002T120000%%00010DTSTAMP:20241025T220128%%00010UID:evento011%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Porto\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="12">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Treino de Corrida%%00010DTSTART:20240120T000000%%00010DTEND:20240121T000000%%00010DTSTAMP:20241025T220128%%00010UID:evento012%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="13">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:TESTE MD%%00010DTSTART:20240205T083000Z%%00010DTEND:20240205T093000Z%%00010DTSTAMP:20241025T220128%%00010UID:13jndk794qde0hgmjk1miue607%%00010SEQUENCE:0%%00010CREATED:20241025T215728Z%%00010LAST-MODIFIED:20241025T215728Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="14">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Viagem ao Algarve%%00010DTSTART:20240310T000000%%00010DTEND:20240312T000000%%00010DTSTAMP:20241025T220128%%00010UID:evento019%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Algarve\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="15">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Revisão de Projetos%%00010DTSTART:20240318T150000Z%%00010DTEND:20240318T160000Z%%00010DTSTAMP:20241025T220128%%00010UID:evento016%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="16">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Teste ISI%%00010DTSTART:20241026T183000%%00010DTEND:20241026T193000%%00010DTSTAMP:20241025T220128%%00010UID:5pfps8s3pvqd07hdamfthaa1bo%%00010SEQUENCE:0%%00010CREATED:20241025T204344Z%%00010LAST-MODIFIED:20241025T215628Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="17">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Teste POO%%00010DTSTART:20241102T133000Z%%00010DTEND:20241102T143000Z%%00010DTSTAMP:20241025T220128%%00010UID:14m5ppjgli397glsn3288ou1l3%%00010SEQUENCE:0%%00010CREATED:20241025T204359Z%%00010LAST-MODIFIED:20241025T215635Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="18">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Pintar Casa%%00010DTSTART:20241106T000000%%00010DTEND:20241107T000000%%00010DTSTAMP:20241025T220128%%00010UID:421tu4i7pqhm4rr88iufa6kdsj%%00010SEQUENCE:0%%00010CREATED:20241025T211714Z%%00010LAST-MODIFIED:20241025T211714Z%%00010LOCATION:Porto\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="19">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Arrumar Garragem%%00010DTSTART:20241115T000000%%00010DTEND:20241116T000000%%00010DTSTAMP:20241025T220128%%00010UID:692tcf6rc8vts19tpkfrh0f313%%00010SEQUENCE:0%%00010CREATED:20241025T211848Z%%00010LAST-MODIFIED:20241025T211848Z%%00010LOCATION:Vieira do Minho\, 4850 Vieira do Minho\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="20">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Teste EAD%%00010DTSTART:20241120T093000Z%%00010DTEND:20241120T103000Z%%00010DTSTAMP:20241025T220128%%00010UID:2rogcms1qpgn1ioollm2pq0v5d%%00010SEQUENCE:0%%00010CREATED:20241025T211901Z%%00010LAST-MODIFIED:20241025T215646Z%%00010LOCATION:Braga%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="21">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Conferência de Tecnologia%%00010DTSTART:20250315T080000Z%%00010DTEND:20250315T120000Z%%00010DTSTAMP:20241025T220128%%00010UID:evento013%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Lisboa\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="22">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Consulta Dentista%%00010DTSTART:20250518T150000%%00010DTEND:20250518T170000%%00010DTSTAMP:20241025T220128%%00010UID:evento018%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="23">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Viagem a Roma%%00010DTSTART:20250622T000000%%00010DTEND:20250623T000000%%00010DTSTAMP:20241025T220128%%00010UID:evento014%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Roma\, Itália%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="24">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Ano Novo em Família%%00010DTSTART:20260101T000000%%00010DTEND:20260102T000000%%00010DTSTAMP:20241025T220128%%00010UID:evento017%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:Lisboa\, Portugal%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+                <config key="25">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="BEGIN:VEVENT%%00010SUMMARY:Reunião de Estratégia%%00010DTSTART:20260105T093000Z%%00010DTEND:20260105T103000Z%%00010DTSTAMP:20241025T220128%%00010UID:evento015%%00010SEQUENCE:0%%00010CREATED:20241025T213943Z%%00010LAST-MODIFIED:20241025T214625Z%%00010LOCATION:%%00010STATUS:confirmed%%00010TRANSP:OPAQUE%%00010END:VEVENT"/>
+                    </config>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="column_spec_1">
+        <entry key="column_name" type="xstring" value="Evento_Title"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="possible_values">
+                <entry key="array-size" type="xint" value="26"/>
+                <config key="0">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Reunião de Planeamento"/>
+                    </config>
+                </config>
+                <config key="1">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Viagem a Madrid"/>
+                    </config>
+                </config>
+                <config key="2">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Consulta Médica"/>
+                    </config>
+                </config>
+                <config key="3">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Jantar com Amigos"/>
+                    </config>
+                </config>
+                <config key="4">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Viagem a Paris"/>
+                    </config>
+                </config>
+                <config key="5">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Apresentação de Projeto"/>
+                    </config>
+                </config>
+                <config key="6">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Aniversário da Maria"/>
+                    </config>
+                </config>
+                <config key="7">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Reunião de Equipa"/>
+                    </config>
+                </config>
+                <config key="8">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Workshop de Tecnologia"/>
+                    </config>
+                </config>
+                <config key="9">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Churrasco de Verão"/>
+                    </config>
+                </config>
+                <config key="10">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Jantar de Negócios"/>
+                    </config>
+                </config>
+                <config key="11">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Reunião com Cliente"/>
+                    </config>
+                </config>
+                <config key="12">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Treino de Corrida"/>
+                    </config>
+                </config>
+                <config key="13">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="TESTE MD"/>
+                    </config>
+                </config>
+                <config key="14">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Viagem ao Algarve"/>
+                    </config>
+                </config>
+                <config key="15">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Revisão de Projetos"/>
+                    </config>
+                </config>
+                <config key="16">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Teste ISI"/>
+                    </config>
+                </config>
+                <config key="17">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Teste POO"/>
+                    </config>
+                </config>
+                <config key="18">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Pintar Casa"/>
+                    </config>
+                </config>
+                <config key="19">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Arrumar Garragem"/>
+                    </config>
+                </config>
+                <config key="20">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Teste EAD"/>
+                    </config>
+                </config>
+                <config key="21">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Conferência de Tecnologia"/>
+                    </config>
+                </config>
+                <config key="22">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Consulta Dentista"/>
+                    </config>
+                </config>
+                <config key="23">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Viagem a Roma"/>
+                    </config>
+                </config>
+                <config key="24">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Ano Novo em Família"/>
+                    </config>
+                </config>
+                <config key="25">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="Reunião de Estratégia"/>
+                    </config>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="column_spec_2">
+        <entry key="column_name" type="xstring" value="Start_Date"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="possible_values">
+                <entry key="array-size" type="xint" value="26"/>
+                <config key="0">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20181215T090000"/>
+                    </config>
+                </config>
+                <config key="1">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20190625T070000"/>
+                    </config>
+                </config>
+                <config key="2">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20200310T140000"/>
+                    </config>
+                </config>
+                <config key="3">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20210512T180000"/>
+                    </config>
+                </config>
+                <config key="4">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20210722T000000"/>
+                    </config>
+                </config>
+                <config key="5">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20210901T090000"/>
+                    </config>
+                </config>
+                <config key="6">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20220501T000000"/>
+                    </config>
+                </config>
+                <config key="7">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20220815T083000"/>
+                    </config>
+                </config>
+                <config key="8">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20230605T130000"/>
+                    </config>
+                </config>
+                <config key="9">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20230810T180000"/>
+                    </config>
+                </config>
+                <config key="10">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20230915T190000"/>
+                    </config>
+                </config>
+                <config key="11">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20231002T100000"/>
+                    </config>
+                </config>
+                <config key="12">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20240120T000000"/>
+                    </config>
+                </config>
+                <config key="13">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20240205T083000"/>
+                    </config>
+                </config>
+                <config key="14">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20240310T000000"/>
+                    </config>
+                </config>
+                <config key="15">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20240318T150000"/>
+                    </config>
+                </config>
+                <config key="16">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20241026T183000"/>
+                    </config>
+                </config>
+                <config key="17">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20241102T133000"/>
+                    </config>
+                </config>
+                <config key="18">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20241106T000000"/>
+                    </config>
+                </config>
+                <config key="19">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20241115T000000"/>
+                    </config>
+                </config>
+                <config key="20">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20241120T093000"/>
+                    </config>
+                </config>
+                <config key="21">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20250315T080000"/>
+                    </config>
+                </config>
+                <config key="22">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20250518T150000"/>
+                    </config>
+                </config>
+                <config key="23">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20250622T000000"/>
+                    </config>
+                </config>
+                <config key="24">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20260101T000000"/>
+                    </config>
+                </config>
+                <config key="25">
+                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <config key="org.knime.core.data.def.StringCell">
+                        <entry key="StringCell" type="xstring" value="20260105T093000"/>
+                    </config>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+</config>

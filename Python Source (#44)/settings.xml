@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="node.script_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="node.script" type="xstring" value="from icalendar import Calendar%%00010import csv%%00010import warnings%%00010%%00010# Supressão do aviso%%00010warnings.filterwarnings(&quot;ignore&quot;, category=FutureWarning)%%00010%%00010def ics_to_csv(ics_file_path, csv_file_path):%%00010    # Lê o ficheiro .ics com encoding UTF-8%%00010    with open(ics_file_path, 'r', encoding='utf-8') as ics_file:%%00010        calendar = Calendar.from_ical(ics_file.read())%%00010%%00010    # Abre o ficheiro .csv para escrita com encoding UTF-8%%00010    with open(csv_file_path, 'w', newline='', encoding='utf-8') as csv_file:%%00010        writer = csv.writer(csv_file)%%00010%%00010        # Escreve o cabeçalho do CSV%%00010        writer.writerow(['Conteúdo do Evento'])%%00010%%00010        # Percorre cada evento no calendário%%00010        for component in calendar.walk():%%00010            if component.name == &quot;VEVENT&quot;:%%00010                # Serializar o evento completo%%00010                event_content = component.to_ical().decode('utf-8')%%00010%%00010                # Verificar se o campo LOCATION existe e, caso não exista, adicioná-lo vazio%%00010                if 'LOCATION' not in event_content:%%00010                    # Inserir LOCATION logo após o DTSTART, para manter o formato%%00010                    event_content = event_content.replace('DTSTART', 'LOCATION:\r\nDTSTART')%%00010%%00010                # Escreve o conteúdo do evento no CSV%%00010                writer.writerow([event_content])%%00010%%00010    print(f&quot;Ficheiro .ics foi convertido para {csv_file_path} com sucesso.&quot;)%%00010%%00010# Caminhos dos ficheiros%%00010ics_file_path = 'C:/Users/Carlos/knime-workspace/TP-ISI-a20746/scripts/meu_calendario_google.ics'%%00010csv_file_path = 'C:/Users/Carlos/knime-workspace/TP-ISI-a20746/scripts/meu_calendario_google.csv'%%00010%%00010# Executa a função de conversão%%00010ics_to_csv(ics_file_path, csv_file_path)%%00010"/>
+        <config key="node.template_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="node.template" type="xstring" value=""/>
+        <config key="open.in_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="open.in" type="xboolean" value="false"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="de.mpicbg.knime.scripting.python.v2.node.source.PythonSourceV2NodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Source"/>
+    <entry key="node-bundle-name" type="xstring" value="Python Scripting Integration for KNIME"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="de.mpicbg.knime.scripting.python"/>
+    <entry key="node-bundle-vendor" type="xstring" value="Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)"/>
+    <entry key="node-bundle-version" type="xstring" value="5.0.0.v202407011112"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Scripting extension"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="de.mpicbg.tds.knime.scripting.python.feature.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG), Dresden, Germany"/>
+    <entry key="node-feature-version" type="xstring" value="5.3.0.v202407011112"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Python Source"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

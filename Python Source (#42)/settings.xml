@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="node.script_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="node.script" type="xstring" value="from google.oauth2.credentials import Credentials%%00010from google_auth_oauthlib.flow import InstalledAppFlow%%00010from google.auth.transport.requests import Request%%00010from googleapiclient.discovery import build%%00010from icalendar import Calendar, Event, vDatetime%%00010import os%%00010import datetime%%00010from dateutil.parser import parse as date_parse%%00010%%00010# Definir o escopo de acesso ao Google Calendar%%00010SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']%%00010%%00010# Carregar as credenciais ou gerar nova autorização%%00010creds = None%%00010if os.path.exists('token.json'):%%00010    creds = Credentials.from_authorized_user_file('token.json', SCOPES)%%00010if not creds or not creds.valid:%%00010    if creds and creds.expired and creds.refresh_token:%%00010        creds.refresh(Request())%%00010    else:%%00010        flow = InstalledAppFlow.from_client_secrets_file(%%00010            'credentials.json', SCOPES)%%00010        creds = flow.run_local_server(port=0)%%00010%%00010    # Guardar o token para futuras execuções%%00010    with open('token.json', 'w') as token:%%00010        token.write(creds.to_json())%%00010%%00010# Conectar à API do Google Calendar%%00010service = build('calendar', 'v3', credentials=creds)%%00010%%00010# Definir o ID do calendário principal%%00010calendar_id = 'carlosaraujotechnology@gmail.com'%%00010%%00010# Obter todos os eventos do Google Calendar (removido o timeMin)%%00010events_result = service.events().list(calendarId=calendar_id,%%00010                                      singleEvents=True,%%00010                                      orderBy='startTime').execute()%%00010events = events_result.get('items', [])%%00010%%00010# Criar ficheiro .ics%%00010cal = Calendar()%%00010%%00010# Adicionar informações do calendário%%00010cal.add('prodid', '-//Google Inc//Google Calendar 70.9054//EN')%%00010cal.add('version', '2.0')%%00010cal.add('calscale', 'GREGORIAN')%%00010cal.add('method', 'PUBLISH')%%00010cal.add('X-WR-CALNAME', calendar_id)%%00010cal.add('X-WR-TIMEZONE', 'Europe/Lisbon')%%00010%%00010# Adicionar informação de fuso horário neste caso Europe/Lisbon%%00010timezone = &quot;&quot;&quot;%%00010BEGIN:VTIMEZONE%%00010TZID:Europe/Lisbon%%00010X-LIC-LOCATION:Europe/Lisbon%%00010BEGIN:DAYLIGHT%%00010TZOFFSETFROM:+0000%%00010TZOFFSETTO:+0100%%00010TZNAME:GMT+1%%00010DTSTART:19700329T010000%%00010RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU%%00010END:DAYLIGHT%%00010BEGIN:STANDARD%%00010TZOFFSETFROM:+0100%%00010TZOFFSETTO:+0000%%00010TZNAME:GMT%%00010DTSTART:19701025T020000%%00010RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU%%00010END:STANDARD%%00010END:VTIMEZONE%%00010&quot;&quot;&quot;%%00010cal.add_component(Calendar.from_ical(timezone))%%00010%%00010# Processar cada evento%%00010for event in events:%%00010    ev = Event()%%00010    ev.add('summary', event.get('summary', 'Sem título'))%%00010%%00010    # Tratar data de início e fim%%00010    start = event['start'].get('dateTime', event['start'].get('date'))%%00010    ev.add('dtstart', vDatetime(date_parse(start)))%%00010%%00010    end = event['end'].get('dateTime', event['end'].get('date'))%%00010    ev.add('dtend', vDatetime(date_parse(end)))%%00010%%00010    # Adicionar outros campos do evento%%00010    ev.add('dtstamp', vDatetime(datetime.datetime.utcnow()))  # Data atual como DTSTAMP%%00010    ev.add('uid', event.get('id'))  # Usar o ID do evento do Google como UID%%00010    ev.add('created', vDatetime(date_parse(event['created'])))%%00010    ev.add('last-modified', vDatetime(date_parse(event['updated'])))%%00010    ev.add('sequence', event.get('sequence', 0))%%00010    ev.add('status', event.get('status', 'CONFIRMED'))%%00010    ev.add('transp', 'OPAQUE')  # Definir como ocupado%%00010%%00010    # Adicionar o campo LOCATION, mesmo que esteja vazio%%00010    ev.add('location', event.get('location', ''))%%00010%%00010    cal.add_component(ev)%%00010%%00010# Guardar num ficheiro .ics%%00010with open('meu_calendario_google.ics', 'wb') as f:%%00010    f.write(cal.to_ical())%%00010%%00010print(&quot;Ficheiro .ics criado com sucesso!&quot;)%%00010"/>
+        <config key="node.template_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="node.template" type="xstring" value=""/>
+        <config key="open.in_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="open.in" type="xboolean" value="false"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="de.mpicbg.knime.scripting.python.v2.node.source.PythonSourceV2NodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Source"/>
+    <entry key="node-bundle-name" type="xstring" value="Python Scripting Integration for KNIME"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="de.mpicbg.knime.scripting.python"/>
+    <entry key="node-bundle-vendor" type="xstring" value="Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)"/>
+    <entry key="node-bundle-version" type="xstring" value="5.0.0.v202407011112"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Scripting extension"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="de.mpicbg.tds.knime.scripting.python.feature.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG), Dresden, Germany"/>
+    <entry key="node-feature-version" type="xstring" value="5.3.0.v202407011112"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Python Source"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
