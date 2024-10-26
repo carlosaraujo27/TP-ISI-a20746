@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="node.script_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="node.script" type="xstring" value="import openpyxl%%00010from openpyxl.worksheet.table import Table, TableStyleInfo%%00010from openpyxl.styles import Alignment%%00010%%00010# Caminho do ficheiro Excel que foi gerado pelo Excel Writer%%00010file_path = 'C:/Users/Carlos/knime-workspace/TP-ISI-a20746/scripts/eventos_futuros.xlsx'%%00010%%00010# Carregar o ficheiro Excel%%00010book = openpyxl.load_workbook(file_path)%%00010sheet = book.active  # Usar a primeira folha ativa ou especificar o nome da folha, se necessário%%00010%%00010# Remover a tabela existente com o nome &quot;EventosFuturos&quot; (caso exista)%%00010existing_tables = [tbl for tbl in sheet._tables if hasattr(tbl, 'name') and tbl.name == &quot;EventosFuturos&quot;]%%00010for tbl in existing_tables:%%00010    sheet._tables.remove(tbl)%%00010%%00010# Determinar o intervalo da nova tabela (exemplo: A1 até a última célula com dados)%%00010min_col, max_col = 1, sheet.max_column%%00010min_row, max_row = 1, sheet.max_row%%00010table_range = f&quot;A{min_row}:{openpyxl.utils.get_column_letter(max_col)}{max_row}&quot;%%00010%%00010# Criar a nova tabela no intervalo de dados%%00010table = Table(displayName=&quot;EventosFuturos&quot;, ref=table_range)%%00010%%00010# Estilizar a tabela%%00010style = TableStyleInfo(name=&quot;TableStyleMedium9&quot;, showFirstColumn=False, %%00010                       showLastColumn=False, showRowStripes=True, showColumnStripes=True)%%00010table.tableStyleInfo = style%%00010%%00010# Adicionar a nova tabela à folha%%00010sheet.add_table(table)%%00010%%00010# Autosize das colunas e centralização das células%%00010for col in sheet.columns:%%00010    max_length = 0%%00010    col_letter = col[0].column_letter  # Obter a letra da coluna%%00010    for cell in col:%%00010        # Centralizar o conteúdo de cada célula%%00010        cell.alignment = Alignment(horizontal='center', vertical='center')%%00010        %%00010        # Calcular o tamanho máximo do conteúdo da coluna%%00010        if cell.value:%%00010            max_length = max(max_length, len(str(cell.value)))%%00010%%00010    # Ajustar a largura da coluna com base no tamanho máximo%%00010    adjusted_width = (max_length + 2)  # Ajuste adicional para melhor visualização%%00010    sheet.column_dimensions[col_letter].width = adjusted_width%%00010%%00010# Salvar o ficheiro formatado%%00010book.save(file_path)%%00010"/>
+        <config key="node.template_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="node.template" type="xstring" value=""/>
+        <config key="open.in_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="open.in" type="xboolean" value="false"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="de.mpicbg.knime.scripting.python.v2.node.source.PythonSourceV2NodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Source"/>
+    <entry key="node-bundle-name" type="xstring" value="Python Scripting Integration for KNIME"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="de.mpicbg.knime.scripting.python"/>
+    <entry key="node-bundle-vendor" type="xstring" value="Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)"/>
+    <entry key="node-bundle-version" type="xstring" value="5.0.0.v202407011112"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Scripting extension"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="de.mpicbg.tds.knime.scripting.python.feature.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG), Dresden, Germany"/>
+    <entry key="node-feature-version" type="xstring" value="5.3.0.v202407011112"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Python Source"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

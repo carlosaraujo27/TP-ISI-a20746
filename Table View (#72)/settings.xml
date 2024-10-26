@@ -9,15 +9,7 @@
     <config key="view">
         <config key="displayedColumns">
             <config key="selected_Internals">
-                <entry key="array-size" type="xint" value="8"/>
-                <entry key="0" type="xstring" value="Calendário"/>
-                <entry key="1" type="xstring" value="URL do Evento"/>
-                <entry key="2" type="xstring" value="Conteúdo do Evento"/>
-                <entry key="3" type="xstring" value="Evento_Title"/>
-                <entry key="4" type="xstring" value="Start_Date"/>
-                <entry key="5" type="xstring" value="End_Date"/>
-                <entry key="6" type="xstring" value="Location"/>
-                <entry key="7" type="xstring" value="Status"/>
+                <entry key="array-size" type="xint" value="0"/>
             </config>
             <entry key="mode" type="xstring" value="MANUAL"/>
             <config key="patternFilter">
@@ -27,15 +19,7 @@
             </config>
             <config key="manualFilter">
                 <config key="manuallySelected">
-                    <entry key="array-size" type="xint" value="8"/>
-                    <entry key="0" type="xstring" value="Calendário"/>
-                    <entry key="1" type="xstring" value="URL do Evento"/>
-                    <entry key="2" type="xstring" value="Conteúdo do Evento"/>
-                    <entry key="3" type="xstring" value="Evento_Title"/>
-                    <entry key="4" type="xstring" value="Start_Date"/>
-                    <entry key="5" type="xstring" value="End_Date"/>
-                    <entry key="6" type="xstring" value="Location"/>
-                    <entry key="7" type="xstring" value="Status"/>
+                    <entry key="array-size" type="xint" value="0"/>
                 </config>
                 <config key="manuallyDeselected">
                     <entry key="array-size" type="xint" value="0"/>
@@ -69,7 +53,7 @@
         <entry key="skipRemainingColumns_Internals" type="xboolean" value="false"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.base.views.node.tableview.TableViewNodeFactory"/>
     <entry key="node-name" type="xstring" value="Table View"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Views"/>
@@ -82,21 +66,11 @@
     <entry key="node-feature-version" type="xstring" value="5.3.2.v202409040940"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Table View"/>
-    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports"/>
-    <config key="internalObjects">
-        <entry key="location" type="xstring" value="internalTables"/>
-        <config key="content">
-            <config key="object_0">
-                <entry key="index" type="xint" value="0"/>
-                <entry key="type" type="xstring" value="table"/>
-                <entry key="table_dir_location" type="xstring" value="object_0"/>
-            </config>
-        </config>
-    </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="7ef659ff-a89d-412e-8a0e-a8326f9fd71f"/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
     </config>
 </config>
