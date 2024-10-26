@@ -2,7 +2,7 @@
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="db_session">
     <config key="Session Info">
         <entry key="version" type="xint" value="5"/>
-        <entry key="sessionID" type="xstring" value="eab53118-361a-4feb-98ec-191cf2c8804d"/>
+        <entry key="sessionID" type="xstring" value="09938c5f-8f3c-4c61-9216-3372f3112d1a"/>
         <entry key="dbTypeId" type="xstring" value="mssqlserver"/>
         <entry key="dialectId" type="xstring" value="mssqlserver"/>
         <entry key="dbURL" type="xstring" value="jdbc:jtds:sqlserver://localhost:1433/EventosCalendarDB"/>
