@@ -31,4 +31,9 @@ Desenvolver um workflow que:
 3. Importe o workflow no KNIME e ajuste os parâmetros de conexão, como o caso da base de dados.
 4. Execute o workflow para processar os dados e gerar os devidos relatórios.
 
+## Relatório Completo
+
+Para mais detalhes, consulte o relatório completo: [Relatório_ISI_a20746.pdf](./Relatório_ISI_a20746.pdf)
+
+
 **Aluno A20746**
