@@ -17,10 +17,10 @@
         <entry key="useRootsNameSpace" type="xboolean" value="false"/>
         <entry key="rootsNameSpacePrefix" type="xstring" value="dns"/>
         <entry key="numberOfQueries" type="xint" value="5"/>
-        <entry key="newColumn0" type="xstring" value="summary"/>
+        <entry key="newColumn0" type="xstring" value="dtstart"/>
         <entry key="useAttributeForColName0" type="xboolean" value="false"/>
         <entry key="attributeForColName0" type="xstring" value="name"/>
-        <entry key="xpath0" type="xstring" value="/calendar/event/summary"/>
+        <entry key="xpath0" type="xstring" value="/calendar/event/dtstart"/>
         <entry key="returnType0" type="xstring" value="String"/>
         <entry key="missingCellOnEmptySet0" type="xboolean" value="true"/>
         <entry key="missingCellOnEmptyString0" type="xboolean" value="false"/>
@@ -28,11 +28,11 @@
         <entry key="missingCellOnInfinityNaN0" type="xboolean" value="true"/>
         <entry key="defaultNumber0" type="xint" value="0"/>
         <entry key="xmlFragmentName0" type="xstring" value="fragment"/>
-        <entry key="multiTagOption0" type="xstring" value="SingleCell"/>
-        <entry key="newColumn1" type="xstring" value="dtstart"/>
+        <entry key="multiTagOption0" type="xstring" value="UngroupToRows"/>
+        <entry key="newColumn1" type="xstring" value="dtend"/>
         <entry key="useAttributeForColName1" type="xboolean" value="false"/>
         <entry key="attributeForColName1" type="xstring" value="name"/>
-        <entry key="xpath1" type="xstring" value="/calendar/event/dtstart"/>
+        <entry key="xpath1" type="xstring" value="/calendar/event/dtend"/>
         <entry key="returnType1" type="xstring" value="String"/>
         <entry key="missingCellOnEmptySet1" type="xboolean" value="true"/>
         <entry key="missingCellOnEmptyString1" type="xboolean" value="false"/>
@@ -40,11 +40,11 @@
         <entry key="missingCellOnInfinityNaN1" type="xboolean" value="true"/>
         <entry key="defaultNumber1" type="xint" value="0"/>
         <entry key="xmlFragmentName1" type="xstring" value="fragment"/>
-        <entry key="multiTagOption1" type="xstring" value="SingleCell"/>
-        <entry key="newColumn2" type="xstring" value="dtend"/>
+        <entry key="multiTagOption1" type="xstring" value="UngroupToRows"/>
+        <entry key="newColumn2" type="xstring" value="location"/>
         <entry key="useAttributeForColName2" type="xboolean" value="false"/>
         <entry key="attributeForColName2" type="xstring" value="name"/>
-        <entry key="xpath2" type="xstring" value="/calendar/event/dtend"/>
+        <entry key="xpath2" type="xstring" value="/calendar/event/location"/>
         <entry key="returnType2" type="xstring" value="String"/>
         <entry key="missingCellOnEmptySet2" type="xboolean" value="true"/>
         <entry key="missingCellOnEmptyString2" type="xboolean" value="false"/>
@@ -52,11 +52,11 @@
         <entry key="missingCellOnInfinityNaN2" type="xboolean" value="true"/>
         <entry key="defaultNumber2" type="xint" value="0"/>
         <entry key="xmlFragmentName2" type="xstring" value="fragment"/>
-        <entry key="multiTagOption2" type="xstring" value="SingleCell"/>
-        <entry key="newColumn3" type="xstring" value="location"/>
+        <entry key="multiTagOption2" type="xstring" value="UngroupToRows"/>
+        <entry key="newColumn3" type="xstring" value="status"/>
         <entry key="useAttributeForColName3" type="xboolean" value="false"/>
         <entry key="attributeForColName3" type="xstring" value="name"/>
-        <entry key="xpath3" type="xstring" value="/calendar/event/location"/>
+        <entry key="xpath3" type="xstring" value="/calendar/event/status"/>
         <entry key="returnType3" type="xstring" value="String"/>
         <entry key="missingCellOnEmptySet3" type="xboolean" value="true"/>
         <entry key="missingCellOnEmptyString3" type="xboolean" value="false"/>
@@ -64,11 +64,11 @@
         <entry key="missingCellOnInfinityNaN3" type="xboolean" value="true"/>
         <entry key="defaultNumber3" type="xint" value="0"/>
         <entry key="xmlFragmentName3" type="xstring" value="fragment"/>
-        <entry key="multiTagOption3" type="xstring" value="SingleCell"/>
-        <entry key="newColumn4" type="xstring" value="status"/>
+        <entry key="multiTagOption3" type="xstring" value="UngroupToRows"/>
+        <entry key="newColumn4" type="xstring" value="summary"/>
         <entry key="useAttributeForColName4" type="xboolean" value="false"/>
         <entry key="attributeForColName4" type="xstring" value="name"/>
-        <entry key="xpath4" type="xstring" value="/calendar/event/status"/>
+        <entry key="xpath4" type="xstring" value="/calendar/event/summary"/>
         <entry key="returnType4" type="xstring" value="String"/>
         <entry key="missingCellOnEmptySet4" type="xboolean" value="true"/>
         <entry key="missingCellOnEmptyString4" type="xboolean" value="false"/>
@@ -76,7 +76,7 @@
         <entry key="missingCellOnInfinityNaN4" type="xboolean" value="true"/>
         <entry key="defaultNumber4" type="xint" value="0"/>
         <entry key="xmlFragmentName4" type="xstring" value="fragment"/>
-        <entry key="multiTagOption4" type="xstring" value="SingleCell"/>
+        <entry key="multiTagOption4" type="xstring" value="UngroupToRows"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
@@ -99,12 +99,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 6"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 26, Cols: 6"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="f687ffb6-6f8e-4b29-b0f1-7ba8415ed0b7"/>
+        <entry key="file_store_id" type="xstring" value="a89b27a2-9d15-4072-9879-1bcbebeb6706"/>
     </config>
 </config>

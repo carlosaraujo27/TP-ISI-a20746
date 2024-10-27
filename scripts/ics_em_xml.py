@@ -3,16 +3,21 @@ import xml.etree.ElementTree as ET
 import os
 
 def ics_to_xml(ics_file_path, xml_file_path):
-    # Ler o arquivo .ics
+    # Ler o ficheiro .ics
     with open(ics_file_path, 'r', encoding='utf-8') as ics_file:
         calendar = Calendar.from_ical(ics_file.read())
 
     # Criar a raiz do XML
     root = ET.Element("calendar")
 
+    # Inicializar contagem de eventos
+    event_count = 0
+
     # Percorrer cada componente do calendário
     for component in calendar.walk():
+        # Verificar se o componente é um evento (VEVENT)
         if component.name == "VEVENT":
+            event_count += 1  # Incrementar a contagem de eventos
             event = ET.SubElement(root, "event")
             
             # Extrair campos do evento e adicionar ao XML
@@ -40,6 +45,12 @@ def ics_to_xml(ics_file_path, xml_file_path):
             ET.SubElement(event, "location").text = location
             ET.SubElement(event, "status").text = status
             ET.SubElement(event, "transp").text = transp
+
+    # Verificar se foram encontrados eventos
+    if event_count == 0:
+        print("Nenhum evento encontrado no ficheiro .ics.")
+    else:
+        print(f"{event_count} eventos encontrados e convertidos para XML.")
 
     # Converter a árvore XML para string e salvar no ficheiro .xml
     tree = ET.ElementTree(root)
