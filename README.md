@@ -2,6 +2,13 @@
 
 Este projeto foi desenvolvido para a unidade curricular **Integração de Sistemas de Informação** do curso de **Licenciatura em Engenharia de Sistemas Informáticos**. O objetivo é demonstrar a aplicação de processos ETL (Extração, Transformação e Carregamento) utilizando o KNIME, com dados de eventos de calendário extraídos de ficheiros ICS.
 
+## QR Code para Vídeo de Demonstração
+
+Utilize o link abaixo para aceder ao vídeo de demonstração do projeto:
+
+[Ver Vídeo de Demonstração](https://myqrcode.com/en/qr/03f20198)
+
+
 ## Objetivo do Projeto
 
 Desenvolver um workflow que:
